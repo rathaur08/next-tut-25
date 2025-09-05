@@ -4,36 +4,36 @@ import { Work_Sans } from "next/font/google";
 
 export const metadata = {
   title: {
-    default: "Sunny Rathaur | Learn Web Development",
-    template: "%s | Sunny Rathaur",
+    default: "Sunny Ratahur | Learn Web Development",
+    template: " | Sunny Ratahur",
   },
   description:
-    "Free tutorials on React.js, Next.js, and web development by Sunny Rathaur.",
-  keywords: ["React", "Next.js", "Web Development", "Sunny Rathaur"],
+    "Free tutorials on React.js, Next.js, and web development by Sunny Ratahur.",
+  keywords: ["React", "Next.js", "Web Development", "Sunny Ratahur"],
   icons: {
     icon: "/images/kody.png",
   },
-  metadataBase: new URL("https://Sunny.com"),
+  metadataBase: new URL("https://Sunnyratahur.com"),
   openGraph: {
-    title: "Sunny Rathaur",
+    title: "Sunny Ratahur",
     description: "Join the best web dev tutorials!",
     url: "https://yourdomain.com",
-    siteName: "Sunny Rathaur",
+    siteName: "Sunny Ratahur",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Sunny Rathaur Logo",
+        alt: "Sunny Ratahur Logo",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sunny Rathaur",
-    description: "Learn Web Dev from scratch with Sunny Rathaur!",
-    creator: "@SunnyRathaur",
+    title: "Sunny Ratahur",
+    description: "Learn Web Dev from scratch with Sunny Ratahur!",
+    creator: "@Sunnyratahur",
     images: ["/og-image.png"],
   },
 };

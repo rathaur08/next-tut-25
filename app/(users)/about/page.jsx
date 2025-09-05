@@ -1,13 +1,14 @@
+import Link from "next/link";
 
-const page = () => {
+const About = async () => {
   return (
     <>
-      <div>
-        <h1>About Page</h1>
-        <p>This is the about page of our Next.js application.</p>
-      </div>
+      <h1 className="common-heading">Hello About</h1>
+      <button>
+        <Link href="/">Home Page</Link>
+      </button>
     </>
-  )
-}
+  );
+};
 
-export default page
+export default About;

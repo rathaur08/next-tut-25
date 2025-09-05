@@ -6,8 +6,8 @@ export const metadata = {
   title: "Service Page",
   description: "this is my service page",
   authors: [
-    { name: "vinod thapa" },
-    { name: "Sunny Rathaur", url: "sunny.com" },
+    { name: "Sunny ratahur" },
+    { name: "Sunny ", url: "Sunnyratahur.com" },
   ],
   keywords: ["nextjs", "reactjs", "fullstack"],
 };
@@ -30,12 +30,12 @@ const Services = async () => {
                 src="/thapa.jpg"
                 width={500}
                 height={500}
-                alt="thapa"
+                alt="ratahur"
                 className="w-full h-full rounded-full"
               />
             </div>
             <h3 className="text-lg font-semibold text-center text-gray-800">
-              Sunny Rathaur
+              Sunny Ratahur
             </h3>
             <p className="text-sm text-gray-600 text-center mt-2">
               Frontend Developer
@@ -50,7 +50,7 @@ const Services = async () => {
             <div className="w-full h-full relative bg-purple-200 rounded-full mx-auto mb-4 flex items-center justify-center">
               <Image
                 src={thapa}
-                alt="Sunny Rathaur"
+                alt="Sunny ratahur"
                 fill={true}
                 quality={100}
                 priority={false}
