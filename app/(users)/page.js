@@ -1,13 +1,17 @@
-
-const page = () => {
+const Home = () => {
   return (
     <>
-      <div>
-        <h1>Home Page</h1>
-        <p>This is the Home page of our Next.js application.</p>
-      </div>
+      <h1 className="font-roboto">
+        Welcome, to Sunny Next.js Course
+      </h1>
+      <button
+        className="bg-amber-400 text-black p-5"
+      // onClick={() => alert("hii")}
+      >
+        Click Me
+      </button>
     </>
-  )
-}
+  );
+};
 
-export default page
+export default Home;

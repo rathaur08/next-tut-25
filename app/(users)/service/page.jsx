@@ -2,6 +2,16 @@ import Image from "next/image";
 import style from "./service.module.css";
 import thapa from "@/public/thapa.jpg";
 
+export const metadata = {
+  title: "Service Page",
+  description: "this is my service page",
+  authors: [
+    { name: "vinod thapa" },
+    { name: "Sunny Rathaur", url: "sunny.com" },
+  ],
+  keywords: ["nextjs", "reactjs", "fullstack"],
+};
+
 const Services = async () => {
   return (
     <section className="font-roboto">
@@ -25,7 +35,7 @@ const Services = async () => {
               />
             </div>
             <h3 className="text-lg font-semibold text-center text-gray-800">
-              Thapa Technical
+              Sunny Rathaur
             </h3>
             <p className="text-sm text-gray-600 text-center mt-2">
               Frontend Developer
@@ -40,7 +50,7 @@ const Services = async () => {
             <div className="w-full h-full relative bg-purple-200 rounded-full mx-auto mb-4 flex items-center justify-center">
               <Image
                 src={thapa}
-                alt="thapa technical"
+                alt="Sunny Rathaur"
                 fill={true}
                 quality={100}
                 priority={false}
