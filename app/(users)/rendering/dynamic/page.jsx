@@ -4,33 +4,33 @@ import { cache } from "react";
 export const dynamic = "force-dynamic";
 
 const DynamicPage = async () => {
-  const doctors = await getAllDoctors();
+  const doctors = await getAllUsers();
 
   return (
     <>
-      <p>Total Doctors: {doctors.length}</p>
-      <DoctorLists doctors={doctors} />
+      <p>Total Users: {users.length}</p>
+      <UsersList users={users} />
     </>
   );
 };
 
 export default DynamicPage;
 
-const DoctorLists = async () => {
-  const doctors = await getAllDoctors();
+const UsersList = async () => {
+  const users = await getAllUsers();
   return (
     <>
       <ul>
-        {doctors.map((doctor) => {
-          return <li key={doctor.doctor_id}> {doctor.first_name} </li>;
+        {users.map((users) => {
+          return <li key={users.id}>{users.id} , {users.name} </li>;
         })}
       </ul>
     </>
   );
 };
 
-const getAllDoctors = cache(async () => {
-  const [doctors] = await db.execute("select * from doctors");
-  //   console.log("fetching doctors");
-  return doctors;
+const getAllUsers = cache(async () => {
+  const [users] = await db.execute("select * from users");
+  console.log("users", users);
+  return users;
 });
