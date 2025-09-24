@@ -1,0 +1,32 @@
+-- Create hospital table
+1st Commands -------------------------
+
+
+CREATE TABLE hospital (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(150) NOT NULL,
+  city VARCHAR(100) NOT NULL,
+  state VARCHAR(100) NOT NULL,
+  department VARCHAR(100) NOT NULL,
+  established_year YEAR NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+
+2nd Commands -------------------------
+
+INSERT INTO hospital (name, city, state, department, established_year)
+VALUES
+('Apollo Hospital', 'New Delhi', 'Delhi', 'Cardiology', 1983),
+('Fortis Hospital', 'Mumbai', 'Maharashtra', 'Neurology', 1996),
+('Max Healthcare', 'Gurgaon', 'Haryana', 'Orthopedics', 2001),
+('AIIMS', 'New Delhi', 'Delhi', 'General Medicine', 1956),
+('CMC Hospital', 'Vellore', 'Tamil Nadu', 'Pediatrics', 1901), -- fixed year
+('Ruby Hall Clinic', 'Pune', 'Maharashtra', 'Oncology', 1959),
+('KIMS Hospital', 'Hyderabad', 'Telangana', 'Nephrology', 2004),
+('Manipal Hospital', 'Bengaluru', 'Karnataka', 'Dermatology', 1991),
+('Narayana Health', 'Jaipur', 'Rajasthan', 'Cardiology', 2000),
+('Tata Memorial', 'Mumbai', 'Maharashtra', 'Oncology', 1941);
+
+3rd Commands ------------------------
+SELECT * FROM hospital;
